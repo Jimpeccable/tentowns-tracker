@@ -1,0 +1,40 @@
+{
+  "town": "Bryn Shander",
+  "npcs": [
+    {
+      "name": "Duvessa Shane",
+      "role": "Speaker",
+      "motivation": "Protect the town from external threats",
+      "secret": "Knows of Arcane Brotherhood activity but fears retaliation",
+      "relationships": [
+        { "target": "Naerth Maxildanarr", "type": "rivalry", "reason": "Suspects his ties to outsiders" }
+      ]
+    },
+    {
+      "name": "Naerth Maxildanarr",
+      "role": "Merchant",
+      "motivation": "Consolidate power in Ten-Towns",
+      "secret": "Arcane Brotherhood agent seeking chardalyn",
+      "relationships": [
+        { "target": "Duvessa Shane", "type": "rivalry", "reason": "Resents her authority" }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "event_001",
+      "description": "A chardalyn shard is found in the market, sparking panic.",
+      "trigger": "Player investigates market",
+      "consequences": "Merchants raise prices; cultists spread Auril propaganda.",
+      "roleplay_prompt": "A merchant begs the party to remove the shard before it corrupts anyone."
+    }
+  ],
+  "hooks": [
+    {
+      "id": "hook_001",
+      "description": "Exposing Naerth’s secret causes Targos to boycott Bryn Shander’s trade.",
+      "trigger": "Players reveal Naerth’s Arcane Brotherhood ties",
+      "consequences": "Trade disputes escalate; new quest to resolve tensions."
+    }
+  ]
+}
